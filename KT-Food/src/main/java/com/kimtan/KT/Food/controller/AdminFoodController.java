@@ -65,7 +65,6 @@ public class AdminFoodController {
 
         Food food = foodService.updateAvailabilityStatus(id);
 
-
         return new ResponseEntity<>(food,HttpStatus.OK);
     }
 }
