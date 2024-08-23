@@ -14,7 +14,7 @@ public interface FoodService {
 
     void deleteFood(Long foodId) throws Exception;
 
-    public List<Food> getRestaurantFood(Long restaurantId, boolean isVegestarain,
+    public List<Food> getRestaurantFood(Long restaurantId, boolean isVegetarian,
                                         boolean isNonveg, boolean isSeasonal, String foodCategory);
 
 
@@ -22,5 +22,7 @@ public interface FoodService {
 
     public Food findFoodById(Long foodId) throws Exception;
 
-    public Food updateA
+    public Food updateAvailabilityStatus(Long foodId) throws Exception;
+
+
 }
