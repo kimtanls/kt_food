@@ -1,11 +1,9 @@
 package com.kimtan.KT.Food.repository;
 
 import com.kimtan.KT.Food.model.Cart;
+import com.kimtan.KT.Food.model.CartItem;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-
-
-public interface CartRepository extends JpaRepository<Cart,Long> {
-    public Cart findByCustomerId(Long userId);
+public interface CartItemRepository extends JpaRepository<CartItem,Long> {
 
 }
