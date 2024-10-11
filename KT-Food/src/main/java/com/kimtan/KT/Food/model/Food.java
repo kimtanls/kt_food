@@ -28,7 +28,7 @@ public class Food {
     private Category foodCategory;
 
     @Column(length = 100)
-    @ElementCollection
+    @ElementCollection // tạo bảng phụ đe lu tru cac phan tu
     private List<String> images;
 
     private boolean available;

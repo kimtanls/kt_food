@@ -73,6 +73,7 @@ public class RestaurantServiceIpm implements RestaurantService {
 
     @Override
     public List<Restaurant> searchRestaurant(String keyword) {
+
         return restaurantRepository.findBySearchQuery(keyword);
     }
 

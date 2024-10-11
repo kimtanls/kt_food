@@ -96,7 +96,7 @@ public class AuthController {
 
 
         String jwt = jwtProvider.generateToken(authentication);
-        log.info("token" + jwt);
+
         AuthResponse authResponse = new AuthResponse();
         authResponse.setJwt(jwt);
         authResponse.setMessage("Login success");

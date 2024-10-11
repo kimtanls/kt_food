@@ -7,6 +7,8 @@ import lombok.Data;
 import java.util.List;
 
 @Data
+//các thuộc tính của đối tượng nhúng sẽ trở thành một phần của bảng cơ sở dữ liệu
+// của thực thể chứa nó, thay vì được lưu trong một bảng riêng biệt.
 @Embeddable
 public class RestaurantDto {
 
